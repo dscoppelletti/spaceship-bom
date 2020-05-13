@@ -382,6 +382,11 @@
             <!-- Spaceship -->
             <dependency>
                 <groupId>it.scoppelletti.spaceship</groupId>
+                <artifactId>spaceship</artifactId>
+                <version>${spaceship.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.scoppelletti.spaceship</groupId>
                 <artifactId>spaceship-gms</artifactId>
                 <version>${spaceship.version}</version>
             </dependency>
@@ -412,16 +417,6 @@
             </dependency>
             <dependency>
                 <groupId>it.scoppelletti.spaceship</groupId>
-                <artifactId>spaceship-http-ui</artifactId>
-                <version>${spaceship.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>it.scoppelletti.spaceship</groupId>
-                <artifactId>spaceship-json</artifactId>
-                <version>${spaceship.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>it.scoppelletti.spaceship</groupId>
                 <artifactId>spaceship-preference</artifactId>
                 <version>${spaceship.version}</version>
             </dependency>
@@ -433,11 +428,6 @@
             <dependency>
                 <groupId>it.scoppelletti.spaceship</groupId>
                 <artifactId>spaceship-stdlib</artifactId>
-                <version>${spaceship.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>it.scoppelletti.spaceship</groupId>
-                <artifactId>spaceship-ui</artifactId>
                 <version>${spaceship.version}</version>
             </dependency>
             <!-- SquareUp -->
