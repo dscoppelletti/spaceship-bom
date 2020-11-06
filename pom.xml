@@ -39,6 +39,7 @@
         <androidx.coordinatorlayout.version>1.1.0</androidx.coordinatorlayout.version>
         <androidx.fragment.version>1.2.5</androidx.fragment.version>
         <androidx.lifecycle.version>2.2.0</androidx.lifecycle.version>
+        <androidx.media.version>1.2.0</androidx.media.version>
         <androidx.navigation.version>2.3.1</androidx.navigation.version>
         <androidx.preference.version>1.1.1</androidx.preference.version>
         <androidx.recyclerview.version>1.1.0</androidx.recyclerview.version>
@@ -169,6 +170,11 @@
                 <groupId>androidx.lifecycle</groupId>
                 <artifactId>lifecycle-viewmodel-ktx</artifactId>
                 <version>${androidx.lifecycle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>androidx.media</groupId>
+                <artifactId>media</artifactId>
+                <version>${androidx.media.version}</version>
             </dependency>
             <dependency>
                 <groupId>androidx.navigation</groupId>
