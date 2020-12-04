@@ -83,6 +83,7 @@
         <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
         <threetenabp.version>1.2.4</threetenabp.version>
         <threetenbp.version>1.4.1</threetenbp.version>
+        <vbpd.version>1.3.1</vbpd.version>
         <zxing.version>3.3.3</zxing.version>
         <!-- 3.4.0 requires Android API level 24+ -->
         <zxing.android.version>3.6.0</zxing.android.version>
@@ -518,6 +519,12 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+            <!-- ViewBindingPropertyDelegate -->
+            <dependency>
+                <groupId>com.kirich1409.viewbindingpropertydelegate</groupId>
+                <artifactId>vbpd-noreflection</artifactId>
+                <version>${vbpd.version}</version>
             </dependency>
             <!-- ZXIng -->
             <dependency>
