@@ -69,6 +69,7 @@
         <moshi.version>1.12.0</moshi.version>
         <okhttp.version>4.9.1</okhttp.version>
         <okio.version>2.10.0</okio.version>
+        <play.services.ads.version>20.2.0</play.services.ads.version>
         <play.services.auth.version>19.2.0</play.services.auth.version>
         <play.services.base.version>17.6.0</play.services.base.version>
         <play.services.location.version>18.0.0</play.services.location.version>
@@ -343,6 +344,11 @@
                 <version>${material.version}</version>
             </dependency>
             <!-- Play Services -->
+            <dependency>
+                <groupId>com.google.android.gms</groupId>
+                <artifactId>play-services-ads</artifactId>
+                <version>${play.services.ads.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.google.android.gms</groupId>
                 <artifactId>play-services-auth</artifactId>
