@@ -36,13 +36,13 @@
         <androidx.annotation.version>1.3.0</androidx.annotation.version>
         <androidx.appcompat.version>1.4.1</androidx.appcompat.version>
         <androidx.browser.version>1.4.0</androidx.browser.version>
-        <androidx.constraintlayout.version>2.1.2</androidx.constraintlayout.version>
+        <androidx.constraintlayout.version>2.1.3</androidx.constraintlayout.version>
         <androidx.coordinatorlayout.version>1.2.0</androidx.coordinatorlayout.version>
-        <androidx.fragment.version>1.4.0</androidx.fragment.version>
+        <androidx.fragment.version>1.4.1</androidx.fragment.version>
         <androidx.lifecycle.version>2.4.0</androidx.lifecycle.version>
         <androidx.media.version>1.4.3</androidx.media.version>
         <androidx.navigation.version>2.3.5</androidx.navigation.version>
-        <androidx.preference.version>1.1.1</androidx.preference.version>
+        <androidx.preference.version>1.2.0</androidx.preference.version>
         <androidx.recyclerview.version>1.2.1</androidx.recyclerview.version>
         <androidx.swiperefreshlayout.version>1.1.0</androidx.swiperefreshlayout.version>
         <androidx.viewpager2.version>1.0.0</androidx.viewpager2.version>
@@ -70,14 +70,14 @@
         <okhttp.version>4.9.3</okhttp.version>
         <okio.version>2.10.0</okio.version>
         <play.services.ads.version>20.5.0</play.services.ads.version>
-        <play.services.auth.version>20.0.1</play.services.auth.version>
+        <play.services.auth.version>20.1.0</play.services.auth.version>
         <play.services.base.version>18.0.1</play.services.base.version>
         <play.services.location.version>19.0.1</play.services.location.version>
         <play.services.maps.version>18.0.2</play.services.maps.version>
         <slf4j.version>1.7.33</slf4j.version>
         <spaceship.version>1.0.0</spaceship.version>
         <retrofit.version>2.9.0</retrofit.version>
-        <thymeleaf.version>3.0.14.RELEASE</thymeleaf.version>
+        <thymeleaf.version>3.0.15.RELEASE</thymeleaf.version>
         <vbpd.version>1.5.6</vbpd.version>
         <zxing.version>3.3.3</zxing.version>
         <!-- 3.4.0 requires Android API level 24+ -->
