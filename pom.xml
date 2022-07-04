@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <name>Spaceship BOM</name>
     <description>Bill of Material for Spaceship libraries</description>
-    <url>http://github.com/dscoppelletti/spaceship</url>
+    <url>http://github.com/dscoppelletti/spaceship-bom</url>
     <inceptionYear>2020</inceptionYear>
     <licenses>
         <license>
@@ -25,9 +25,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git@github.com:dscoppelletti/spaceship.git</connection>
-        <developerConnection>scm:git:git@github.com:dscoppelletti/spaceship.git</developerConnection>
-        <url>git@github.com:dscoppelletti/spaceship.git</url>
+        <connection>scm:git:git@github.com:dscoppelletti/spaceship-bom.git</connection>
+        <developerConnection>scm:git:git@github.com:dscoppelletti/spaceship-bom.git</developerConnection>
+        <url>git@github.com:dscoppelletti/spaceship-bom.git</url>
     </scm>
     <properties>
         <android.desugar.version>1.1.5</android.desugar.version>
@@ -52,20 +52,20 @@
         <colorpickerpreference.version>2.0.6</colorpickerpreference.version>
         <commons.lang.version>3.12.0</commons.lang.version>
         <dagger.version>2.40.5</dagger.version>
-        <dokka.version>0.10.1</dokka.version>
+        <dokka.version>1.6.21</dokka.version>
         <exoplayer.version>2.16.1</exoplayer.version>
         <facebook.version>12.3.0</facebook.version>
         <!-- com.facebook.android:facebook-common:7.0.0 => com.google.zxing:core:3.3.3 !!! -->
         <firebase.crashlytics.gradle.version>2.8.1</firebase.crashlytics.gradle.version>
+        <freemarker.version>2.3.31</freemarker.version>
         <glide.version>4.12.0</glide.version>
         <google.maps.utils.version>2.3.0</google.maps.utils.version>
         <google.places.version>2.5.0</google.places.version>
         <google.services.version>4.3.10</google.services.version>
-        <gradle.versions.version>0.41.0</gradle.versions.version>
         <junit.version>4.13.2</junit.version>
-        <kotlin.coroutines.version>1.6.0</kotlin.coroutines.version>
+        <kotest.version>5.3.0</kotest.version>
+        <kotlin.coroutines.version>1.6.2</kotlin.coroutines.version>
         <kotlin.logging.version>1.12.5</kotlin.logging.version>
-        <lombok.version>1.18.22</lombok.version>
         <material.version>1.5.0</material.version>
         <mockito.version>2.25.0</mockito.version>
         <moshi.version>1.13.0</moshi.version>
@@ -81,7 +81,6 @@
         <slf4j.version>1.7.33</slf4j.version>
         <spaceship.version>1.0.0</spaceship.version>
         <retrofit.version>2.9.0</retrofit.version>
-        <thymeleaf.version>3.0.15.RELEASE</thymeleaf.version>
         <vbpd.version>1.5.6</vbpd.version>
         <zxing.version>3.3.3</zxing.version>
         <!-- 3.4.0 requires Android API level 24+ -->
@@ -282,6 +281,12 @@
                 <artifactId>google-services</artifactId>
                 <version>${google.services.version}</version>
             </dependency>
+            <!-- Freemarker -->
+             <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemarker.version}</version>
+            </dependency>
             <!-- Glide -->
             <dependency>
                 <groupId>com.github.bumptech.glide</groupId>
@@ -479,6 +484,11 @@
             </dependency>
             <!-- Test -->
             <dependency>
+                <groupId>io.kotest</groupId>
+                <artifactId>kotest-assertions-core</artifactId>
+                <version>${kotest.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
@@ -488,12 +498,6 @@
                 <artifactId>mockito-core</artifactId>
                 <version>${mockito.version}</version>
             </dependency>
-            <!-- Thymeleaf -->
-            <dependency>
-                <groupId>org.thymeleaf</groupId>
-                <artifactId>thymeleaf</artifactId>
-                <version>${thymeleaf.version}</version>
-            </dependency>
             <!-- Tools -->
             <dependency>
                 <groupId>com.android.tools</groupId>
@@ -501,19 +505,9 @@
                 <version>${android.desugar.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.ben-manes</groupId>
-                <artifactId>gradle-versions-plugin</artifactId>
-                <version>${gradle.versions.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.jetbrains.dokka</groupId>
                 <artifactId>dokka-gradle-plugin</artifactId>
                 <version>${dokka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
             </dependency>
             <!-- ViewBindingPropertyDelegate -->
             <dependency>
@@ -534,22 +528,27 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <distributionManagement>
-        <repository>
-            <id>maven-distrib</id>
-            <name>Development</name>
-            <url>${it.scoppelletti.tools.devRepoUrl}</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>fail</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-                <updatePolicy>never</updatePolicy>
-                <checksumPolicy>fail</checksumPolicy>
-            </snapshots>
-        </repository>
-    </distributionManagement>
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <distributionManagement>
+                <repository>
+                    <id>dev</id>
+                    <name>Development</name>
+                    <url>${it.scoppelletti.tools.devRepoUrl}</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                        <checksumPolicy>fail</checksumPolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                        <updatePolicy>never</updatePolicy>
+                        <checksumPolicy>fail</checksumPolicy>
+                    </snapshots>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 </project>
