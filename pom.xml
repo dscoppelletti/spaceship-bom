@@ -535,7 +535,7 @@
                 <repository>
                     <id>dev</id>
                     <name>Development</name>
-                    <url>${it.scoppelletti.tools.devRepoUrl}</url>
+                    <url>${it.scoppelletti.spaceship.repository.url}</url>
                     <layout>default</layout>
                     <releases>
                         <enabled>true</enabled>
