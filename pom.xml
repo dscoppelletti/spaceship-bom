@@ -41,8 +41,8 @@
         <androidx.fragment.version>1.5.5</androidx.fragment.version>
         <androidx.gridlayout.version>1.0.0</androidx.gridlayout.version>
         <androidx.lifecycle.version>2.5.1</androidx.lifecycle.version>
-        <androidx.media.version>1.4.3</androidx.media.version>
-        <androidx.navigation.version>2.3.5</androidx.navigation.version>
+        <androidx.media.version>1.6.0</androidx.media.version>
+        <androidx.navigation.version>2.5.3</androidx.navigation.version>
         <androidx.preference.version>1.2.0</androidx.preference.version>
         <androidx.recyclerview.version>1.2.1</androidx.recyclerview.version>
         <androidx.swiperefreshlayout.version>1.1.0</androidx.swiperefreshlayout.version>
@@ -52,38 +52,36 @@
         <colorpickerpreference.version>2.0.6</colorpickerpreference.version>
         <commons.lang.version>3.12.0</commons.lang.version>
         <dagger.version>2.45</dagger.version>
-        <exoplayer.version>2.16.1</exoplayer.version>
-        <facebook.version>12.3.0</facebook.version>
+        <exoplayer.version>2.18.4</exoplayer.version>
+        <facebook.version>16.0.0</facebook.version>
         <!-- com.facebook.android:facebook-common:7.0.0 => com.google.zxing:core:3.3.3 !!! -->
-        <firebase.crashlytics.gradle.version>2.8.1</firebase.crashlytics.gradle.version>
+        <firebase.crashlytics.gradle.version>2.9.4</firebase.crashlytics.gradle.version>
         <freemarker.version>2.3.32</freemarker.version>
-        <glide.version>4.12.0</glide.version>
-        <google.maps.utils.version>2.3.0</google.maps.utils.version>
-        <google.places.version>2.5.0</google.places.version>
-        <google.services.version>4.3.10</google.services.version>
+        <glide.version>4.15.0</glide.version>
+        <google.maps.utils.version>3.4.0</google.maps.utils.version>
+        <google.places.version>3.0.0</google.places.version>
+        <google.services.version>4.3.15</google.services.version>
         <junit.version>4.13.2</junit.version>
         <kotest.version>5.5.5</kotest.version>
         <kotlin.coroutines.version>1.6.4</kotlin.coroutines.version>
         <kotlin.logging.version>1.12.5</kotlin.logging.version>
-        <material.version>1.5.0</material.version>
+        <material.version>1.8.0</material.version>
         <mockito.version>2.25.0</mockito.version>
         <moshi.version>1.14.0</moshi.version>
         <okhttp.version>4.10.0</okhttp.version>
         <okio.version>3.0.0</okio.version>
         <play.services.auth.version>20.4.1</play.services.auth.version>
         <play.services.base.version>18.2.0</play.services.base.version>
-        <play.services.location.version>19.0.1</play.services.location.version>
-        <play.services.maps.version>18.0.2</play.services.maps.version>
+        <play.services.location.version>21.0.1</play.services.location.version>
+        <play.services.maps.version>18.1.0</play.services.maps.version>
         <rxandroid.version>2.1.1</rxandroid.version>
         <rxjava.version>2.2.20</rxjava.version>
         <slf4j.version>1.7.36</slf4j.version>
         <spaceship.version>1.1.0</spaceship.version>
         <retrofit.version>2.9.0</retrofit.version>
         <vbpd.version>1.5.8</vbpd.version>
-        <zxing.version>3.3.3</zxing.version>
-        <!-- 3.4.0 requires Android API level 24+ -->
-        <zxing.android.version>3.6.0</zxing.android.version>
-        <!-- 4.0.0 requires Android API level 24+ -->
+        <zxing.version>3.5.1</zxing.version>
+        <zxing.android.version>4.3.0</zxing.android.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -180,7 +178,7 @@
             </dependency>
             <dependency>
                 <groupId>androidx.navigation</groupId>
-                <artifactId>navigation-fragment-ktx</artifactId>
+                <artifactId>navigation-fragment</artifactId>
                 <version>${androidx.navigation.version}</version>
             </dependency>
             <dependency>
@@ -190,7 +188,7 @@
             </dependency>
             <dependency>
                 <groupId>androidx.navigation</groupId>
-                <artifactId>navigation-ui-ktx</artifactId>
+                <artifactId>navigation-ui</artifactId>
                 <version>${androidx.navigation.version}</version>
             </dependency>
             <dependency>
@@ -299,6 +297,11 @@
             <dependency>
                 <groupId>com.github.bumptech.glide</groupId>
                 <artifactId>glide</artifactId>
+                <version>${glide.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bumptech.glide</groupId>
+                <artifactId>ksp</artifactId>
                 <version>${glide.version}</version>
             </dependency>
             <!-- Google API -->
@@ -416,11 +419,6 @@
             </dependency>
             <dependency>
                 <groupId>it.scoppelletti.spaceship</groupId>
-                <artifactId>spaceship-gradle-java</artifactId>
-                <version>${spaceship.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>it.scoppelletti.spaceship</groupId>
                 <artifactId>spaceship-html</artifactId>
                 <version>${spaceship.version}</version>
             </dependency>
@@ -432,11 +430,6 @@
             <dependency>
                 <groupId>it.scoppelletti.spaceship</groupId>
                 <artifactId>spaceship-preference</artifactId>
-                <version>${spaceship.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>it.scoppelletti.spaceship</groupId>
-                <artifactId>spaceship-security</artifactId>
                 <version>${spaceship.version}</version>
             </dependency>
             <dependency>
