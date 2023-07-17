@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>it.scoppelletti.spaceship</groupId>
     <artifactId>spaceship-bom</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <packaging>pom</packaging>
     <name>Spaceship BOM</name>
     <description>Bill of Material for Spaceship libraries</description>
@@ -68,7 +68,7 @@
         <mockito.version>2.25.0</mockito.version>
         <moshi.version>1.14.0</moshi.version>
         <okhttp.version>4.11.0</okhttp.version>
-        <okio.version>3.3.0</okio.version>
+        <okio.version>3.4.0</okio.version>
         <play.services.auth.version>20.5.0</play.services.auth.version>
         <play.services.base.version>18.2.0</play.services.base.version>
         <play.services.location.version>21.0.1</play.services.location.version>
