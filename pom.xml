@@ -50,7 +50,7 @@
 		<androidx.webkit.version>1.6.1</androidx.webkit.version>
 		<bc.version>1.70</bc.version>
         <colorpickerpreference.version>2.0.6</colorpickerpreference.version>
-        <commons.lang.version>3.12.0</commons.lang.version>
+        <commons.lang.version>3.18.0</commons.lang.version>
         <dagger.version>2.45</dagger.version>
         <dokka.version>1.7.20</dokka.version>
         <exoplayer.version>2.18.6</exoplayer.version>
