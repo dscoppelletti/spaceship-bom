@@ -56,7 +56,7 @@
         <exoplayer.version>2.18.6</exoplayer.version>
         <facebook.version>16.0.1</facebook.version>
         <!-- com.facebook.android:facebook-common:7.0.0 => com.google.zxing:core:3.3.3 !!! -->
-        <freemarker.version>2.3.32</freemarker.version>
+        <freemarker.version>2.3.35</freemarker.version>
         <glide.version>4.15.1</glide.version>
         <google.maps.utils.version>3.4.0</google.maps.utils.version>
         <google.places.version>3.1.0</google.places.version>
